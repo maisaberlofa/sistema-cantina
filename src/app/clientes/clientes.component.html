@@ -1,0 +1,40 @@
+<div class="container">
+    <h1 class="display-4">Detalhes do Cliente</h1>
+    <br>
+    <div class="container border rounded shadow-sm">
+        <div class="row text-center">
+            <div class="col border">
+                <span>Usuário: {{cliente.user}}</span>
+            </div>
+            <div class="col border">
+                <span>Nome: {{cliente.name}}</span>
+            </div>
+            <div class="col border">
+                <span>Data de Cadastro: {{cliente.date}}</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container border rounded shadow-sm">
+        <div class="row text-center">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Data de Compra</th>
+                        <th scope="col">Vendedor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of cliente.orders">
+                        <th scope="row">{{order.item}}</th>
+                        <th scope="row">{{order.price}}</th>
+                        <th scope="row">{{order.purchaseDate}}</th>
+                        <th scope="row">{{order.vendedor}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
