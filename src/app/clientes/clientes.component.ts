@@ -11,13 +11,13 @@ export class ClientesComponent implements OnInit {
 
   clientes =
     [{
-      id: 1,
+      id: 0,
       name: 'Teste1',
       user: 'usuarioteste',
       date: '15/10/2022'
     },
     {
-      id: 2,
+      id: 1,
       name: 'Teste2',
       user: 'usuarioteste',
       date: '15/10/2022'

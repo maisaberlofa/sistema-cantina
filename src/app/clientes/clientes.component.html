@@ -13,7 +13,7 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let cliente of clientes">
-                        <th scope="row">{{cliente.name}}</th>
+                        <th scope="row" routerLink="/detalhes/{{cliente.id}}">{{cliente.name}}</th>
                         <th scope="row">{{cliente.user}}</th>
                         <th scope="row">{{cliente.date}}</th>
                     </tr>
